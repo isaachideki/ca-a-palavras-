@@ -1,2 +1,2 @@
-# ca-a-palavras-
+# caça-palavras-
 caça-palavras utilizando javascript
