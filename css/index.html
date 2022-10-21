@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>CAÇA-PALAVRAS</title>
+</head>
+  <body>
+    <div class="wrapper">
+    <h1 class="titulo">caça-palvras</h1>
+    <h2 class="tema"> Tema: países</h2>
+    <h4 class="nomes">IRÃ - BRASIL - RUSSIA - CANADÁ - CHINA - JAPÃO - HOLANDA - ESPANHA - FRANÇA - GRÉCIA</h4>
+
+
+    
+    <center> <table border="1" height="150" width="150">
+        <script>
+         matriz = new Array
+     matriz = [["G","O","L","V","R","A","C","A","N","A","D","Á","A","B","A","A","C"],
+               ["S","R","P","A","Ç","N","A","R","F","Ç","U","E","A","B","A","A","H"],
+               ["T","A","É","I","A","A","E","A","A","V","Ã","R","A","B","A","A","I"],
+               ["A","Ú","A","C","U","S","S","I","A","A","E","A","A","B","A","A","N"],
+               ["D","L","A","Ã","I","P","J","O","Ã","P","J","S","R","B","A","A","A"],
+               ["O","Ú","Ç","A","R","F","A","Ç","N","A","S","R","P","É","A","A","A"],
+               ["S","Ç","A","F","A","Ú","N","O","M","É","I","N","H","A","C","A","A"],
+               ["Ã","A","Ç","A","A","A","H","M","É","Ç","S","A","R","Ç","N","I","A"],
+               ["R","A","N","W","B","R","A","S","I","L","Ç","A","Ú","F","A","H","A"],
+               ["I","Q","A","I","N","C","I","Q","É","Ã","K","A","S","B","A","A","A"],
+               ["D","F","R","Q","J","A","P","Ã","O","F","M","A","S","B","A","A","A"],
+               ["O","E","F","B","R","E","H","E","A","C","D","A","I","B","A","A","A"],
+               ["S","R","A","H","O","L","A","N","D","A","L","E","A","I","O","S","O"]];
+
+
+            binario = [[1, 0, 0, 0, 0, 0, 1,1,1,1,1,1,0,0,0,0,1],[0, 1, 0, 1, 1, 1, 1,1,1,0,0,0,0,0,0,0,1],[0, 0, 1, 0, 0, 0, 0,0,0,0,0,0,0,0,0,0,1,],
+            [0, 0, 0, 1, 0, 0, 0,0,0,0,1,0,0,0,0,0,1,],[0, 0, 0, 0, 1, 0, 0,0,0,0,0,1,0,0,0,0,1],[0, 0, 0, 0, 0, 1, 0,0,0,0,0,0,1,0,0,0,0],
+            [0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,1,0,0,0],[1, 0, 0, 0, 0, 0, 0,0,0,0,0,0,1,0,1,0,0],[1, 0, 0, 0, 1, 1, 1,1,1,1,0,0,1,0,0,1,0],
+            [1, 0, 0, 0, 0, 0, 0,0,0,0,0,0,1,0,0,0,1],[0, 0, 0, 0, 1, 1, 1,1,1,0,0,0,1,0,0,0,0],[0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,1,0,0,0,0],
+            [0, 0, 0, 1,1,1,1,1,1,1,0,0,1,0,0,0,0],];
+        
+        
+            for(linha=0;linha<13;linha++){
+                document.write("<tr>")
+                for(coluna=0;coluna<17 ;coluna++){
+                    if(binario[linha][coluna] == 1){
+                        document.write("<td bgcolor='#40ff00'>"  + matriz[linha][coluna] + "</td>");
+                    } else{
+                        document.write("<td>"  + matriz[linha][coluna] + "</td>");
+                    }
+                   
+                }
+              document.write("</tr>")
+            }
+        </script>
+    </table> 
+    <center></center>
+       
+</body>
+</html>
